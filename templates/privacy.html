@@ -1,0 +1,226 @@
+{% extends "base.html" %}
+
+{% block title %}Privacy Policy — Spendly{% endblock %}
+
+{% block head %}
+<style>
+    /* ── Privacy page layout — mirrors terms.html ───────────────── */
+    .terms-hero {
+        background: linear-gradient(135deg, var(--surface) 0%, var(--bg) 100%);
+        border-bottom: 1px solid var(--border);
+        padding: 4rem 1.5rem 3rem;
+        text-align: center;
+    }
+
+    .terms-hero .terms-badge {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 600;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--accent);
+        background: color-mix(in srgb, var(--accent) 12%, transparent);
+        border: 1px solid color-mix(in srgb, var(--accent) 28%, transparent);
+        border-radius: 99px;
+        padding: 0.3rem 0.9rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .terms-hero h1 {
+        font-family: 'DM Serif Display', serif;
+        font-size: clamp(2rem, 5vw, 3rem);
+        color: var(--text-primary);
+        margin: 0 0 0.75rem;
+    }
+
+    .terms-hero p {
+        font-size: 0.95rem;
+        color: var(--text-muted);
+        margin: 0;
+    }
+
+    /* ── Article ───────────────────────────────────────────────── */
+    .terms-article {
+        max-width: 760px;
+        margin: 3rem auto 5rem;
+        padding: 0 1.5rem;
+    }
+
+    .terms-section {
+        margin-bottom: 2.75rem;
+        padding-bottom: 2.75rem;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .terms-section:last-child {
+        border-bottom: none;
+        margin-bottom: 0;
+    }
+
+    .terms-section-number {
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        color: var(--accent);
+        margin-bottom: 0.4rem;
+    }
+
+    .terms-section h2 {
+        font-family: 'DM Serif Display', serif;
+        font-size: 1.45rem;
+        color: var(--text-primary);
+        margin: 0 0 1rem;
+    }
+
+    .terms-section p,
+    .terms-section ul {
+        font-size: 0.96rem;
+        line-height: 1.8;
+        color: var(--text-secondary);
+        margin: 0 0 0.85rem;
+    }
+
+    .terms-section ul {
+        padding-left: 1.4rem;
+    }
+
+    .terms-section ul li {
+        margin-bottom: 0.4rem;
+    }
+
+    .terms-section p:last-child {
+        margin-bottom: 0;
+    }
+
+    .terms-effective {
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        text-align: center;
+        margin-top: 3rem;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+
+<!-- ── Hero ───────────────────────────────────────────────────── -->
+<div class="terms-hero">
+    <div class="terms-badge">Legal</div>
+    <h1>Privacy Policy</h1>
+    <p>Effective date: 1 January 2026 &nbsp;·&nbsp; Last updated: 28 May 2026</p>
+</div>
+
+<!-- ── Article ─────────────────────────────────────────────────── -->
+<article class="terms-article">
+
+    <!-- Intro -->
+    <div class="terms-section">
+        <p>
+            At <strong>Spendly</strong>, your privacy matters. This Privacy Policy explains what
+            information we collect, how we use it, and the choices you have. By using Spendly you
+            agree to the practices described here. Please also read our
+            <a href="/terms">Terms &amp; Conditions</a>.
+        </p>
+    </div>
+
+    <!-- 1. Data We Collect -->
+    <div class="terms-section">
+        <p class="terms-section-number">01</p>
+        <h2>Data We Collect</h2>
+        <p>We collect only what is necessary to provide the Service:</p>
+        <ul>
+            <li><strong>Account information</strong> — your name and email address when you register.</li>
+            <li><strong>Expense records</strong> — amounts, categories, dates, and any descriptions you enter.</li>
+            <li><strong>Usage data</strong> — pages visited, features used, and timestamps, collected in an anonymised form to improve the app.</li>
+            <li><strong>Device &amp; browser info</strong> — browser type, operating system, and IP address for security and fraud prevention.</li>
+        </ul>
+        <p>
+            We do <strong>not</strong> collect payment card details, bank credentials, or any
+            government-issued identification.
+        </p>
+    </div>
+
+    <!-- 2. How We Use Your Data -->
+    <div class="terms-section">
+        <p class="terms-section-number">02</p>
+        <h2>How We Use Your Data</h2>
+        <p>Your data is used exclusively to:</p>
+        <ul>
+            <li>Create and manage your Spendly account.</li>
+            <li>Display your expense history, summaries, and insights within the app.</li>
+            <li>Send transactional emails (e.g. password reset, account verification).</li>
+            <li>Detect and prevent fraudulent or unauthorised access.</li>
+            <li>Improve the reliability and performance of the Service through anonymised analytics.</li>
+        </ul>
+        <p>
+            We will never use your personal expense data to serve you targeted advertising, nor
+            will we sell your data to third parties.
+        </p>
+    </div>
+
+    <!-- 3. Data Storage & Security -->
+    <div class="terms-section">
+        <p class="terms-section-number">03</p>
+        <h2>Data Storage &amp; Security</h2>
+        <p>
+            Your data is stored on secured servers. We implement industry-standard safeguards
+            including encryption in transit (TLS), hashed passwords, and regular security audits.
+        </p>
+        <p>
+            While we take reasonable precautions, no method of transmission over the internet is
+            100% secure. You are responsible for keeping your account credentials confidential.
+        </p>
+        <p>
+            You can permanently delete your account and all associated data at any time from your
+            profile settings. Deletion is irreversible and processed within 30 days.
+        </p>
+    </div>
+
+    <!-- 4. Third-Party Services -->
+    <div class="terms-section">
+        <p class="terms-section-number">04</p>
+        <h2>Third-Party Services</h2>
+        <p>
+            Spendly may use trusted third-party providers to operate the Service, such as cloud
+            hosting and email delivery. These providers are contractually obligated to handle your
+            data only on our behalf and in accordance with this policy.
+        </p>
+        <p>
+            We use Google Fonts to serve typography assets. Google may collect basic request
+            metadata (e.g. IP address) when your browser fetches these fonts. Please refer to
+            <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>
+            for details.
+        </p>
+        <p>
+            We do not integrate with advertising networks, social media trackers, or any analytics
+            service that profiles individual users.
+        </p>
+    </div>
+
+    <!-- 5. Contact Us -->
+    <div class="terms-section">
+        <p class="terms-section-number">05</p>
+        <h2>Contact Us</h2>
+        <p>
+            If you have any questions, concerns, or requests regarding this Privacy Policy or
+            your personal data, please reach out to us:
+        </p>
+        <ul>
+            <li>Email: <a href="mailto:privacy@spendly.app">privacy@spendly.app</a></li>
+            <li>Response time: within 5 business days</li>
+        </ul>
+        <p>
+            We may update this Privacy Policy from time to time. When we do, we will revise the
+            "Last updated" date above. Continued use of Spendly after changes are posted
+            constitutes your acceptance of the revised policy.
+        </p>
+    </div>
+
+    <p class="terms-effective">
+        &copy; 2026 Spendly. All rights reserved.
+    </p>
+
+</article>
+
+{% endblock %}
